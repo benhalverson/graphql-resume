@@ -17,6 +17,7 @@ export interface PositionInterface {
   employmentType: EmploymentType;
   location: string;
   achievements: string[];
+  technologyUsed: string[];
 }
 
 export enum EmploymentType {

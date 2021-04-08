@@ -53,6 +53,7 @@ export interface NexusGenScalars {
 
 export interface NexusGenObjects {
   Bio: faces.undefined;
+  Position: faces.undefined;
   Query: {};
 }
 
@@ -76,8 +77,23 @@ export interface NexusGenFieldTypes {
     twitter: NexusGenScalars['URL'] | null; // URL
     website: NexusGenScalars['URL'] | null; // URL
   }
+  Position: { // field return type
+    achievements: Array<string | null> | null; // [String]
+    company: string | null; // String
+    employmentType: string | null; // String
+    endDate: string | null; // String
+    id: string | null; // ID
+    location: string | null; // String
+    months: number | null; // Int
+    startDate: string | null; // String
+    technology: Array<string | null> | null; // [String]
+    title: string | null; // String
+    years: number | null; // Int
+  }
   Query: { // field return type
     bio: NexusGenRootTypes['Bio'] | null; // Bio
+    position: NexusGenRootTypes['Position'] | null; // Position
+    positions: Array<NexusGenRootTypes['Position'] | null> | null; // [Position]
   }
 }
 
@@ -91,12 +107,32 @@ export interface NexusGenFieldTypeNames {
     twitter: 'URL'
     website: 'URL'
   }
+  Position: { // field return type name
+    achievements: 'String'
+    company: 'String'
+    employmentType: 'String'
+    endDate: 'String'
+    id: 'ID'
+    location: 'String'
+    months: 'Int'
+    startDate: 'String'
+    technology: 'String'
+    title: 'String'
+    years: 'Int'
+  }
   Query: { // field return type name
     bio: 'Bio'
+    position: 'Position'
+    positions: 'Position'
   }
 }
 
 export interface NexusGenArgTypes {
+  Query: {
+    position: { // args
+      id?: string | null; // ID
+    }
+  }
 }
 
 export interface NexusGenAbstractTypeMembers {
