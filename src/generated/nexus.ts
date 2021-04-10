@@ -80,12 +80,11 @@ export interface NexusGenFieldTypes {
   Position: { // field return type
     achievements: Array<string | null> | null; // [String]
     company: string | null; // String
-    employmentType: string | null; // String
-    endDate: string | null; // String
+    endDate: NexusGenScalars['Date'] | null; // Date
     id: string | null; // ID
     location: string | null; // String
     months: number | null; // Int
-    startDate: string | null; // String
+    startDate: NexusGenScalars['Date'] | null; // Date
     technology: Array<string | null> | null; // [String]
     title: string | null; // String
     years: number | null; // Int
@@ -110,12 +109,11 @@ export interface NexusGenFieldTypeNames {
   Position: { // field return type name
     achievements: 'String'
     company: 'String'
-    employmentType: 'String'
-    endDate: 'String'
+    endDate: 'Date'
     id: 'ID'
     location: 'String'
     months: 'Int'
-    startDate: 'String'
+    startDate: 'Date'
     technology: 'String'
     title: 'String'
     years: 'Int'

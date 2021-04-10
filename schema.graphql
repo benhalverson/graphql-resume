@@ -20,12 +20,13 @@ scalar Date
 type Position {
   achievements: [String]
   company: String
-  employmentType: String
-  endDate: String
+  endDate: Date
   id: ID
   location: String
   months: Int
-  startDate: String
+
+  """When I started at this position"""
+  startDate: Date
   technology: [String]
   title: String
   years: Int

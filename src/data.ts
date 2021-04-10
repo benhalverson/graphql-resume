@@ -15,7 +15,7 @@ export const data = {
       id: '1',
       title: 'Lead UI Developer',
       company: 'Accenture for Google',
-      startDate: '2019-03',
+      startDate: '2019-03-25',
       endDate: null,
       employmentType: EmploymentType.FULL_TIME,
       location: 'San Jose, CA',
@@ -39,8 +39,8 @@ export const data = {
       id: '2',
       title: 'Software Engineer',
       company: 'Amazon Lab126',
-      startDate: '2018-10',
-      endDate: '2018-12',
+      startDate: '2018-10-7',
+      endDate: '2018-12-15',
       employmentType: EmploymentType.CONTACTOR,
       location: 'Sunnyvale, CA',
       achievements: [
@@ -64,8 +64,15 @@ export const data = {
       startDate: '2017-01',
       endDate: '2018-05',
       employmentType: EmploymentType.FULL_TIME,
-      location: 'Sunnyvale, CA',
-      achievements: ['']
+      location: 'San Francisco, CA',
+      achievements: [
+        'Built an iPad app with React Native for a pharmaceutical trade show',
+        'Built three different iPad apps using Angular, HTML, SCSS, Node.js',
+        'Built a training web app using React & Redux for pharmacy technicans',
+        'Built a MacOS and Windows 10 app using Veeva, HTML, CSS, JS, nw.js',
+        'Mentored junior software developers'
+      ],
+      technologyUse: ['Angular', 'HTML', 'SCSS', 'React', 'Redux', 'Node.js']
     },
     {
       id: '4',

@@ -18,8 +18,9 @@ export const Query = queryType({
     t.field('position', {
       type: Position,
       args: { id: idArg() },
-      resolve: (root, { id }: { id: string }, ctx) =>
-        data.positions.find(position => position.id === id)
+      resolve: (_, { id }: { id: string }, __) => {
+        return data.positions.find(position => position.id === id);
+      }
     });
   }
 });
