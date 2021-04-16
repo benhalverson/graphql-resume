@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@nexus/schema": "0.20.1",
-    "apollo-server-micro": "2.22.2",
-    "date-fns": "2.21.1",
+    "apollo-server-micro": "2.23.0",
+    "date-fns": "2.20.3",
     "graphql": "15.5.0",
     "graphql-scalars": "1.9.0",
     "micro": "9.3.4",
